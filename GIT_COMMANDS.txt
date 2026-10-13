@@ -1,0 +1,145 @@
+
+'OrangeHRM PLAYWRIGHT AUTOMATION GITHUB COMMAND REFERENCE'
+========================================
+
+Repository Name: OrangeHRM-Playwright-Automation
+
+GitHub Repository: https://github.com/baliramyadav/OrangeHRM-Playwright-Automation.git
+
+========================================
+
+FIRST TIME PUSHING CODE TO GITHUB
+
+========================================
+
+Use these commands only when setting up Git for the first time in the local project.
+
+Step 1: Initialize Git
+
+git init
+
+Step 2: Add project files
+
+git add .
+
+Step 3: Commit the files
+
+git commit -m "Initial OrangeHRM Playwright automation setup message"
+
+Step 4: Rename the branch to main
+
+git branch -M main
+
+Step 5: Connect the GitHub repository
+
+git remote add origin https://github.com/baliramyadav/OrangeHRM-Playwright-Automation.git
+
+Step 6: Push code to GitHub
+
+git push -u origin main
+
+========================================
+
+PUSHING CODE AFTER MODIFICATIONS 2nd time
+
+========================================
+
+Use these commands whenever you modify existing files or add new files.
+
+Step 1: Check changed files
+
+git status
+
+Step 2: Stage all changes
+
+git add .
+
+Step 3: Commit the changes
+
+git commit -m "Describe your changes here"
+
+Step 4: Push changes to GitHub
+
+git push
+
+========================================
+
+EXAMPLE COMMIT MESSAGES
+
+========================================
+
+Login validation updates:
+
+git commit -m "Add login page validation"
+
+Website title and URL validation:
+
+git commit -m "Add website title and URL validation"
+
+Username and password field validation:
+
+git commit -m "Add username and password field validation"
+
+
+========================================
+
+USEFUL GIT COMMANDS
+
+========================================
+
+Check working tree status:
+git status
+
+View commit history:
+git log --oneline
+
+View configured remote repository:
+git remote -v
+
+View current branch:
+git branch
+
+Check differences in modified files:
+git diff
+
+========================================
+
+IMPORTANT NOTES
+
+========================================
+
+Run Git commands from the project root directory.
+Do not run git init repeatedly after the initial setup.
+Do not run git remote add origin repeatedly.
+Use a meaningful commit message for every commit.
+Make sure .gitignore excludes node_modules, test-results,
+
+playwright-report, and sensitive files such as .env.
+
+Never commit passwords, access tokens, or other secrets.
+If git push is rejected because the remote has new commits,
+
+first review the error and synchronize the branches.
+
+If git commit reports "nothing to commit", there are no
+
+staged changes to commit.
+
+======================================== END OF GIT COMMAND REFERENCE ========================================
+
+-------first time--------------
+git init
+git add .
+git commit -m "OrangeHRM setup"
+git branch -M main
+git remote add origin https://github.com/baliramyadav/OrangeHRM-Playwright-Automation.git
+git push -u origin main
+
+Git push process for the 2nd time and every time after:
+-----------------------------------
+git status
+git add .
+git commit -m "Added Open Website code"
+git push
+
+-------------
