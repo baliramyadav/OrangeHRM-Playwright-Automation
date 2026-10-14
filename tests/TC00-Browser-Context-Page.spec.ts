@@ -7,10 +7,11 @@ test('Test-1 BrowserContext and Page', async () => {
 // Launch the Chromium browser in headless mode (headless=true ,without a visible browser window).
   const browser = await chromium.launch({ headless: false });
   console.log(' Browser launched:', browser.browserType().name());
+
+
 // Print the name of the browser that was launched (Chromium).  
   const contextA = await browser.newContext();
   // Create the first independent browser context with its own session and storage
-
   const pageA = await contextA.newPage();
   // Create a new browser page (tab) inside Context A.
   await pageA.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
