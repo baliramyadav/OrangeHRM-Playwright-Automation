@@ -16,6 +16,10 @@ export default defineConfig({
   /* Run tests in files in parallel */
   fullyParallel: true,
   timeout: 70000,
+  // Maximum time allowed for an assertion.
+  expect: {
+    timeout: 5_000,
+  },
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   
   /* Retry on CI only */
@@ -23,16 +27,24 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  //reporter: 'html',
+  // Generate a readable HTML report.
+  reporter: [
+    ['list'],
+    ['html', { open: 'never' }],
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
+    baseURL:
+      'https://opensource-demo.orangehrmlive.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+     // Default action timeout.
+    actionTimeout: 10_000,
   },
 
   /* Configure projects for major browsers */
