@@ -24,9 +24,7 @@ test.describe('OrangeHRM Login Page Automation', () => {
   });
 
   test.afterEach(async ({}, testInfo) => {
-    console.log(
-      `Finished test: ${testInfo.title} | Status: ${testInfo.status}`,
-    );
+    console.log(`Finished test: ${testInfo.title} | Status: ${testInfo.status}`, );
   });
 
   test.afterAll(async () => {
