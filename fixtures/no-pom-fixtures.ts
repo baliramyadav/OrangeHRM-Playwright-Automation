@@ -10,7 +10,7 @@ export const test= base.extend<MyFixtures>({
     //Define a fixture named myPage
     myPage: async ({page},use) =>{
         //setup open the website
-        await page.goto('https://www.google.com');
+        await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
         //give the page to the test
         await use(page);
         console.log('test completed');
