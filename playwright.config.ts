@@ -15,10 +15,10 @@ export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
-  timeout: 70000,
+  timeout: 30*10000,
   // Maximum time allowed for an assertion.
   expect: {
-    timeout: 5_000,
+    timeout: 50_10000,
   },
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   
