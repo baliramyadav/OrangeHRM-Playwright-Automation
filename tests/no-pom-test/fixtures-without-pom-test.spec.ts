@@ -21,7 +21,4 @@ test('Login and Logout ',async ({myPage,page}) =>{
     await page.locator('i.oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon').click();
     await page.getByRole('menuitem',{name:'Logout'}).click();
 
-
-
-
 });

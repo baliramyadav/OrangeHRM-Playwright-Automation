@@ -1,0 +1,7 @@
+1. Web-first assertions: toBeVisible, toHaveText, toHaveValue, toBeEnabled, etc.
+2. Soft assertions vs hard assertions and when to use each
+3. Auto-retrying assertions and their role in reducing test flakiness
+4. Writing custom matchers and extending Playwright's expect
+5. Visual regression testing using toHaveScreenshot()
+6. Validating API responses - status codes, headers, and JSON schema checks
+7. Assertion best practices - what and how much to assert per test case

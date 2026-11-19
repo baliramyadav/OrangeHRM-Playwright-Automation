@@ -1,0 +1,11 @@
+Day3 Task:
+
+1. Playwright locators vs Selenium selectors - lazy evaluation and auto-retry concept
+2. getByRole, getByText, getByLabel, getByPlaceholder, getByTestId - when to use each
+3. CSS selectors vs XPath - performance, readability, and maintainability comparison
+4. Chaining and filtering locators using .filter(), has, hasText
+5. Locating and interacting with elements inside iframes and shadow DOM
+6. Handling dynamic elements and unstable/auto-generated IDs
+7. Resolving strict-mode violations when a locator matches multiple elements
+8. Collaborating with developers to introduce stable data-testid attributes
+9. Locator best practices - avoiding brittle absolute XPath, preferring user-facing attributes

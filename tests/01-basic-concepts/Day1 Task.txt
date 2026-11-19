@@ -1,0 +1,8 @@
+1. Playwright architecture - CDP for Chromium, custom protocols for Firefox/WebKit
+2. Browser, BrowserContext, and Page - isolated session architecture
+3. Multi-browser support: Chromium, Firefox, and WebKit engines
+4. Playwright Test Runner vs Playwright Library (playwright-core) usage
+5. Auto-waiting mechanism - how it eliminates explicit/implicit wait code
+6. Trace Viewer, video, and screenshot capture architecture under the hood
+7. Project setup using 'npm init playwright@latest'
+8. playwright.config.ts - projects, timeouts, retries, baseURL, reporters
