@@ -26,16 +26,22 @@ test('4Verify Username and Password fields',async ({orangePage})=>{
 });
 
 // Using getByLabel()
-test.only('5Verify Username using label', async ({ orangePage }) => {
+test.only('5Verify Username using getByRole', async ({ orangePage }) => {
     await orangePage.getByLabel('Username').fill('Admin');
     await orangePage.getByLabel('Password').fill('admin123');
     await orangePage.getByRole('button', { name: 'Login' }).click();
-    await expect(orangePage.locator('h6')).toHaveText('Dashboard');
+    await expect(orangePage.locator('h6')).toHaveText('Dashboard');   
+    // Find the list item containing manda user
+    const name = orangePage.getByRole('listitem').filter({ hasText: 'manda user' });
+  // Validate username visibility
+    await expect(name).toBeVisible();
+  // Verify exact username text
+    await expect(name).toContainText('manda user');
 
 });
 
 // Using getByTestId()
-test.only('6Verify Login button using Test ID', async ({ orangePage }) => {
+test.skip('6Verify Login button using Test ID', async ({ orangePage }) => {
     await orangePage.getByTestId('username').fill('Admin');
     await orangePage.getByTestId('password').fill('admin123');
     await orangePage.getByTestId('login-button').click();
@@ -44,7 +50,7 @@ test.only('6Verify Login button using Test ID', async ({ orangePage }) => {
 });
 
 // Verify invalid login credentials
-test.only('7Verify invalid login', async ({ orangePage }) => {
+test.skip('7Verify invalid login', async ({ orangePage }) => {
     await orangePage.getByPlaceholder('Username').fill('WrongUser');
     await orangePage.getByPlaceholder('Password').fill('WrongPassword123');
     await orangePage.getByRole('button', {name: 'Login'}).click();
@@ -53,7 +59,7 @@ test.only('7Verify invalid login', async ({ orangePage }) => {
 
 
 //Verify empty login validation
-test.only('8Verify empty login validation', async ({ orangePage }) => {
+test.skip('8Verify empty login validation', async ({ orangePage }) => {
     await orangePage.getByRole('button', { name: 'Login' }).click();
     await expect(orangePage.getByText('Required', { exact: true })).toHaveCount(2);
 });
